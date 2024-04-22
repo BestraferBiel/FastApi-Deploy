@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="/static/estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Gabriel</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="/static/img/hero.jpg" alt="">
+            </div>
+            <h1>GABRIEL CABRERA</h1>
+            <h2>Ingeniero de Software</h2>
+            <div class="redes">
+                <a href="https://www.facebook.com/profile.php?id=100088148317625"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://x.com/gabrielbestraf"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/gabriel-cabrera-90786b257/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/BestraferBiel"><i class="fa-solid fa-rss"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Gabriel Cabrera Romo.</span> Mi especialización se centra en el backend, especialmente utilizando Python como lenguaje principal. Mi experiencia se extiende a través de diversos frameworks, incluyendo FastAPI y Django, donde he demostrado habilidades destacadas en la creación de APIs con FastAPI y en la integración completa de sistemas web con Django.En el ámbito de bases de datos, mi experiencia abarca MongoDB y MariaDB, lo que me permite manejar eficientemente datos tanto relacionales como NoSQL. Además, he trabajado con el motor de plantillas Smarty, integrándolo con éxito en los servidores de ClearPass.Mi portafolio refleja proyectos donde he aplicado estos conocimientos de manera efectiva, creando soluciones robustas y escalables que cumplen con los requisitos funcionales y técnicos. Estoy comprometido con la excelencia en el desarrollo de software y siempre estoy en búsqueda de oportunidades para ampliar mis habilidades y conocimientos en este campo dinámico y desafiante del desarrollo web y backend..</p>
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            13-02-1994
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            +637013489
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            gabrielcabreraromo2019@gmail.com
+                        </li>
+                        <li>
+                            <strong>Github</strong>
+                            <a href="https://github.com/BestraferBiel">BestraferBiel</a>
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Illes Balears,España
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>FREELANCE</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-apple"></i>
+                            <span>MAC OS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <button onclick="window.location.href='/static/archivo/CV-Gabriel Cabrera.docx';" download>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+            </a>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>JAVASCRIPT</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>89%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>PYTHON</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>DJANGO</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>81%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>FASTAPI</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>78%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Proyect Management</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>94%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3> Experiencia de trabajo</h3>
+                    <div class="item izq">
+                        <h4>Desarrollador Web y Backend Freelance </h4>
+                        <span class="casa">Remoto</span>
+                        <span class="fecha">2021-2022</span>
+                        <p> He creado soluciones digitales innovadoras y funcionales para una variedad de clientes. Mi enfoque se centra en el desarrollo de sitios web y aplicaciones web personalizados, junto con la implementación de robustos sistemas backend para garantizar un rendimiento óptimo y una experiencia de usuario excepcional. Desde el diseño hasta la implementación, estoy comprometido a ofrecer resultados de alta calidad que cumplan con los requisitos específicos de cada proyecto. Mi pasión por la tecnología y mi habilidad para adaptarme a nuevas tecnologías me permiten ofrecer soluciones eficientes y escalables que impulsan el éxito de mis clientes en el mundo digital.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Xetid</h4>
+                        <span class="casa">Empresa de desarrollo de software</span>
+                        <span class="fecha">2019 - 2021</span>
+                        <p>En XETID,se basa en la especialización y colaboración de equipos multidisciplinarios compuestos por profesionales altamente calificados. Estos equipos poseen un profundo dominio de las tecnologías y los procesos necesarios para llevar a cabo la informatización efectiva de diversas áreas de negocio.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Plexus Tech</h4>
+                        <span class="casa">IT Consulting, Services and Solutions</span>
+                        <span class="fecha">2022 - Actualidad</span>
+                        <p>Plexus Tech es una empresa innovadora en el campo de la tecnología, dedicada a proporcionar soluciones de vanguardia para satisfacer las necesidades digitales más exigentes. Con un enfoque centrado en la excelencia técnica y la creatividad, Plexus Tech se destaca en el desarrollo de software a medida, la consultoría tecnológica.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col derecha">
+                    <h3>Educación</h3>
+                    <div class="item der">
+                        <h4>Ingeniería Informática </h4>
+                        <span class="casa">Universidad de Ciego de Ávila Máximo Gómez Báez</span>
+                        <span class="fecha">2015 - 2020</span>
+                        <p>Mi trayectoria académica en Ingeniería Informática me ha proporcionado un profundo entendimiento de los principios fundamentales de la informática, así como una amplia gama de habilidades técnicas. Durante mis estudios, he adquirido conocimientos especializados en áreas como programación, diseño de algoritmos, desarrollo de software, bases de datos, redes, seguridad informática y más.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Curso de Python</h4>
+                        <span class="casa">Udemy</span>
+                        <span class="fecha">2023</span>
+                        <p>Este curso me proporcionó una base sólida en el lenguaje de programación Python, incluyendo conceptos básicos y avanzados, estructuras de datos, funciones, manejo de excepciones y programación orientada a objetos. Estos conocimientos son fundamentales para el desarrollo de aplicaciones y scripts en diversos contextos.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Curso de FastAPI y Django:</h4>
+                        <span class="casa">Udemy</span>
+                        <span class="fecha">2024</span>
+                        <p>En este curso, aprendí a utilizar los frameworks FastAPI y Django para el desarrollo rápido y eficiente de aplicaciones web en Python. FastAPI es ideal para la creación de APIs rápidas y modernas, mientras que Django ofrece un conjunto completo de herramientas para construir aplicaciones web robustas y escalables. A través de este curso, adquirí habilidades prácticas en el desarrollo de aplicaciones web utilizando estas tecnologías de vanguardia.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO 
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="/static/img/p1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="/static/img/p2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="/static/img/p3.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="/static/img/p4.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="/static/img/p5.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="/static/img/p6.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+-->
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <form action="/form/" method="post" class="form-group">
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre" class="form-control"><br>
+                <label for="telefono">Teléfono:</label><br>
+                <input type="text" id="telefono" name="telefono" class="form-control"><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" class="form-control"><br>
+                <label for="subject">Asunto:</label><br>
+                <input type="text" id="subject" name="subject" class="form-control"><br>
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje" class="form-control"></textarea><br>
+                <input type="submit" value="Enviar" class="btn btn-primary mt-3">
+                </form>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="/static/img/ubicacion.jpg" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Palma de Mallorca, España
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamanos: +637013489
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+                <a href="https://www.facebook.com/profile.php?id=100088148317625"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://x.com/gabrielbestraf"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/gabriel-cabrera-90786b257/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/BestraferBiel"><i class="fa-solid fa-rss"></i></a>
+            </div>
+    </footer>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+// Parse the URL parameters
+var urlParams = new URLSearchParams(window.location.search);
+
+// Check if the 'message' parameter is present
+if (urlParams.has('message')) {
+    var message = urlParams.get('message');
+
+    // Check if the message is 'email_sent'
+    if (message === 'email_sent') {
+        // Show a message to the user
+        Swal.fire({
+            icon: 'success',
+            title: '¡Éxito!',
+            text: 'Email enviado con éxito',
+        })
+    }
+}
+</script>
+    </script>
+    <script src="/static/script.js"></script>
+</body>
+</html>
