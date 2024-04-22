@@ -18,10 +18,10 @@ templates = Jinja2Templates(directory="templates")
 def read_root(request: Request):
     return templates.TemplateResponse("index.html", {"request": request})
 
-
 @app.post("/form/")
-async def send_email(nombre: str = Form(...), email: EmailStr = Form(...), subject: str = Form(...), telefono: str = Form(...), mensaje: str = Form(...)):
+async def send_email(nombre: str = Form(...), subject: str = Form(...), telefono: str = Form(...), mensaje: str = Form(...)):
     yag = yagmail.SMTP(os.getenv('EMAIL_ADDRESS'), os.getenv('EMAIL_PASSWORD'))
+    email = "gabrielcabreraromo2019@gmail.com"
     to = email
     subject = subject
     body = f"Name: {nombre}\nPhone: {telefono}\nMessage: {mensaje}"
